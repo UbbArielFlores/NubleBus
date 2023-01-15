@@ -1,0 +1,84 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-icon (click)="volver()" name="arrow-undo-outline"></ion-icon><ion-title>Recorridos de {{id}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content style="text-align: center;">
+  <h4>Lunes a Viernes</h4>
+  <ion-grid>
+    <ion-row>
+      <ion-col>Hacia Chillán</ion-col>
+      <ion-col>Hacia Portezuelo</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-grid>
+      <div *ngFor="let hacia of recorrido_selecionado.luneas_a_viernes.hacia_chillan">
+        <br><ion-col>{{hacia}}</ion-col> <br>
+      </div>
+    </ion-grid>
+    <ion-grid>
+      <div *ngFor="let desde of recorrido_selecionado.luneas_a_viernes.desde_chillan">
+        <br><ion-col>{{desde}}</ion-col> <br>
+      </div>
+    </ion-grid>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+  </ion-grid>
+  <div *ngIf=" recorrido_selecionado.luneas_a_viernes.desde_chillan.length == 0 &&  recorrido_selecionado.luneas_a_viernes.hacia_chillan.length == 0">
+    <h5>No posee registro</h5>
+  </div>
+<ion-grid>
+  <hr size="2px" color="#135d54"/>
+  <h4>Sabado</h4>
+    <ion-row>
+      <ion-col>Hacia Chillán</ion-col>
+      <ion-col>Hacia Portezuelo</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-grid>
+      <div *ngFor="let hacia of recorrido_selecionado.sabado.hacia_chillan">
+        <br><ion-col>{{hacia}}</ion-col> <br>
+      </div>
+    </ion-grid>
+    <ion-grid>
+      <div *ngFor="let desde of recorrido_selecionado.sabado.desde_chillan">
+        <br><ion-col>{{desde}}</ion-col> <br>
+      </div>
+    </ion-grid>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+  </ion-grid>
+  <div *ngIf=" recorrido_selecionado.sabado.desde_chillan.length == 0 &&  recorrido_selecionado.sabado.hacia_chillan.length == 0">
+    <h5>No posee registro</h5>
+  </div>
+<ion-grid>
+  <hr size="2px" color="#135d54"/>
+  <h3>Domingo y Festivos</h3>
+    <ion-row>
+      <ion-col>Hacia Chillán</ion-col>
+      <ion-col>Hacia Portezuelo</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-grid>
+      <div *ngFor="let hacia of recorrido_selecionado.domingo.hacia_chillan">
+        <br><ion-col>{{hacia}}</ion-col> <br>
+      </div>
+    </ion-grid>
+    <ion-grid>
+      <div *ngFor="let desde of recorrido_selecionado.domingo.desde_chillan">
+        <br><ion-col>{{desde}}</ion-col> <br>
+      </div>
+    </ion-grid>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+  </ion-grid>
+  <div *ngIf=" recorrido_selecionado.domingo.desde_chillan.length == 0 &&  recorrido_selecionado.domingo.hacia_chillan.length == 0">
+    <h5>No posee registro</h5>
+  </div>
+<ion-grid>
+</ion-grid>
+</ion-content>

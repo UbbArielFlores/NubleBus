@@ -1,0 +1,7 @@
+{
+  "name": "NubleBusApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

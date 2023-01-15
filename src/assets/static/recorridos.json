@@ -1,0 +1,22 @@
+{
+    "comunas": [
+        {
+        "lugar": "Portezuelo",
+        "slogan" : "Donde nace el vino chileno",
+        "imagen" : "portezuelo.jpg" ,
+        "descripcion_imagen" : "Letrero Portezuelo",
+        "luneas_a_viernes" : {
+            "hacia_chillan" : [],
+            "desde_chillan" : []
+            },
+        "sabado": {
+            "hacia_chillan" : ["08:00","09:00","10:00","12:00","14:00","15:30","17:00","18:00"],
+            "desde_chillan" : ["09:00","11:00","13:00","14:00","15:00","16:30","18:00","19:00"]
+            },
+        "domingo": {
+            "hacia_chillan" : [],
+            "desde_chillan" : []
+            }
+        }
+    ]
+}

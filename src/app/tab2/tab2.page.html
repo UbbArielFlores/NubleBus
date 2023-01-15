@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab 2
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Recorridos</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div *ngFor="let recorrido of this.recorridos_list">
+    <ion-card (click)="verRecorrido(recorrido.lugar)">
+      <img alt="{{recorrido.descripcion_imagen}}" src="/assets/img/{{recorrido.imagen}}" />
+      <ion-card-header>
+        <ion-card-title>{{recorrido.lugar}}</ion-card-title>
+        <ion-card-subtitle>{{recorrido.slogan}}</ion-card-subtitle>
+      </ion-card-header>
+    
+      <ion-card-content>
+        Selecciona para visualizar todos los recorridos.
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
