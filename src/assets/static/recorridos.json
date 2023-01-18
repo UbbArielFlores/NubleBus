@@ -2,6 +2,7 @@
     "comunas": [
         {
         "lugar": "Portezuelo",
+        "empresa" : "Buses Rosario",
         "slogan" : "Donde nace el vino chileno",
         "imagen" : "portezuelo.jpg" ,
         "descripcion_imagen" : "Letrero Portezuelo",
@@ -17,6 +18,69 @@
             "hacia_chillan" : [],
             "desde_chillan" : []
             }
+        },
+        {
+        "lugar": "Coelemu",
+        "empresa" : "Jara e hijos",
+        "slogan" : "",
+        "imagen" : "portezuelo.jpg" ,
+        "descripcion_imagen" : "Letrero Coelemu",
+        "luneas_a_viernes" : {
+            "hacia_chillan" : ["07:00","08:15","09:00","12:45","14:20","16:45"],
+            "desde_chillan" : ["06:45","09:50", "11:50","13:50","15:50","16:50","17:50"]
+            },
+        "sabado": {
+            "hacia_chillan" : ["07:30","09:00","12:45"],
+            "desde_chillan" : ["07:00","09:50","16:50"]
+            },
+        "domingo": {
+            "hacia_chillan" : [],
+            "desde_chillan" : []
+            }
+        },
+        {
+        "lugar": "Quirihue",
+        "empresa" : "Jara e hijos",
+        "slogan" : "",
+        "imagen" : "portezuelo.jpg" ,
+        "descripcion_imagen" : "Letrero Quirihue",
+        "luneas_a_viernes" : {
+            "hacia_chillan" : ["07:40","09:15","10:00","13:40","16:15","17:30"],
+            "desde_chillan" : ["06:45","09:50","10:50", "11:50","13:50","15:50","16:50","17:50"]
+            },
+        "sabado": {
+            "hacia_chillan" : ["08:20","10:00","13:40"],
+            "desde_chillan" : ["07:00","09:50","16:50"]
+            },
+        "domingo": {
+            "hacia_chillan" : [],
+            "desde_chillan" : []
+            }
+        },
+        {
+        "lugar": "Quirihue - Ninhue - Cobquecura",
+        "empresa" : "Via Itata",
+        "slogan" : "Viajes - Turismo",
+        "imagen" : "portezuelo.jpg" ,
+        "descripcion_imagen" : "Letrero Quirihue",
+        "luneas_a_viernes" : {
+            "hacia_chillan" : ["06:00","06:10N","06:30N","06:50","07:50N","10:20N","11:20N","12:00N","12:40N","14:30","15:30N","17:15","18:30"],
+            "desde_chillan" : ["07:10","07:30N","08:00CB","10:20", "11:00C","11:30N","13:59","14:30NC","17:00","17:50","18:20N","18:40","19:45"],
+            "desde_Cobquecura" : ["11:40","13:40","17:45"],
+            "desde_Buchupureo" : ["11:20"]
+            },
+        "sabado": {
+            "hacia_chillan" : ["06:50N","07:50N","10:30N","11:40N","12:50N","14:30","15:30","17:15","18:30"],
+            "desde_chillan" : ["08:00NC","10:45NC","11:30N","13:59","14:30NC","17:00N","18:00N","18:50N","19:45S"],
+            "desde_Cobquecura" : ["11:40","13:40","17:45"],
+            "desde_Buchupureo" : ["11:20"]
+            },
+        "domingo": {
+            "hacia_chillan" : ["08:30N","10:30","12:30N","14:30N","17:20N","17:20N","18:30"],
+            "desde_chillan" : ["09:00NC","11:00N","12:45N","14:45NC","17:00N","19:00N"],
+            "desde_Cobquecura" : ["11:45","17:45"]
+            }
         }
+        
     ]
 }
